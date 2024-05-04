@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import ModalsView from '../views/ModalsView.vue'
 import ReactionTimerView from '../views/ReactionTimerView.vue'
+import FormView from '../views/FormView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -20,6 +21,11 @@ const router = createRouter({
       path: '/timer',
       name: 'timer',
       component: ReactionTimerView
+    },
+    {
+      path: '/form',
+      name: 'form',
+      component: FormView
     },
     {
       path: '/about',
