@@ -1,6 +1,6 @@
 <script>
-import TheWelcome from '../components/TheWelcome.vue'
-import HelloWorld from '../components/HelloWorld.vue'
+import TheWelcome from './TheWelcome.vue'
+import HelloWorld from './HelloWorld.vue'
 
 export default {
   name: 'HomeView',

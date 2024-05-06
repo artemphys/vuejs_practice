@@ -12,6 +12,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink to="/modals">Modals</RouterLink>
         <RouterLink to="/timer">Reaction timer</RouterLink>
         <RouterLink to="/form">Form</RouterLink>
+        <RouterLink to="/jobs">Jobs</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
     </div>
@@ -68,6 +69,7 @@ nav a:first-of-type {
   }
 
   header .wrapper {
+    width: 100%;
     display: flex;
     place-items: flex-start;
     flex-wrap: wrap;

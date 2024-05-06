@@ -10,8 +10,8 @@
 </template>
 
 <script>
-import Block from '../components/ReactTimer/Block.vue'
-import Results from '../components/ReactTimer/Results.vue'
+import Block from './Block.vue'
+import Results from './Results.vue'
 
 export default {
   name: 'ReactionTimer',
