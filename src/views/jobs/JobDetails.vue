@@ -1,9 +1,17 @@
 <template>
   <div>
-    <h1>Job Details</h1>
-    <p>The job Id is: {{ id }}</p>
-    <button @click="back">Go back</button>
-    <button @click="redirect">Home</button>
+    <div v-if="job">
+      <h1>{{ job.title }}</h1>
+      <p>The job Id is: {{ id }}</p>
+      <p>{{ job.details }}</p>
+    </div>
+    <div v-else>
+      <p>Loading Job details...</p>
+    </div>
+    <div>
+      <button @click="back">Go back</button>
+      <button @click="redirect">Home</button>
+    </div>
   </div>
 </template>
 
@@ -24,6 +32,17 @@ export default {
     redirect() {
       this.$router.push('/')
     }
+  },
+  data() {
+    return {
+      job: null
+    }
+  },
+  mounted() {
+    fetch('http://localhost:3000/jobs/' + this.id)
+      .then((res) => res.json())
+      .then((data) => (this.job = data))
+      .catch((err) => console.error(err))
   }
 }
 </script>
