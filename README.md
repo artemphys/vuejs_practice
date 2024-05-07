@@ -1,7 +1,11 @@
 # .
+
 Vue JS Practice
 
+1. To launch json-server: run npx json-server data/db.json
+
 # .
+
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup
