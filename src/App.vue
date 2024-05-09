@@ -13,7 +13,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink to="/timer">Reaction timer</RouterLink>
         <RouterLink to="/form">Form</RouterLink>
         <RouterLink to="/jobs">Jobs</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/blog">Blog</RouterLink>
       </nav>
     </div>
   </header>
